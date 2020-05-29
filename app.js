@@ -1,7 +1,8 @@
 const argv = require('./config/yargs').argv;
 const control = require('./buscador/control')
 let comando = argv._[0];
-//Oscar
+l //et cpais = 
+
 switch (comando) {
     case 'mostrar':
         control.mostrar(argv.file, argv.country, argv.year)
