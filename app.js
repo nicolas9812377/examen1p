@@ -1,14 +1,14 @@
 const argv = require('./config/yargs').argv;
 const control = require('./buscador/control')
 let comando = argv._[0];
-l //et cpais = 
+
 
 switch (comando) {
     case 'mostrar':
-        control.mostrar(argv.file, argv.country, argv.year)
+        control.mostrar(argv.archivo, argv.pais, argv.anio).then(msg => console.log(msg)).catch(err => console.log(err));
         break;
     case 'guardar':
-        control.guardar(argv.file, argv.country, argv.year, argv.out);
+        control.guardar(argv.archivo, argv.pais, argv.anio).then(msg => console.log(msg)).catch(err => console.log(err));
         break;
     default:
         console.log('Comando no reconocido');
