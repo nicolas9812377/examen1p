@@ -1,4 +1,3 @@
-const colors = require("colors");
 const fs = require("fs");
 const csv = require("csv-parser");
 let vector = [];
