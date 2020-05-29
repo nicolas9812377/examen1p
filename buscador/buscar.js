@@ -37,7 +37,7 @@ const consulta = async(anio, country) => {
 
 const literal1 = async(file, country, year) => {
     let v = await lecturacsv(file);
-    console.log(v);
+    //console.log(v);
     let g = await consulta(year, country);
     return g;
 };
