@@ -1,0 +1,14 @@
+{
+    "name": "examen1p",
+    "version": "1.0.0",
+    "description": "Examen 1 Parcial",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Nicolas Carrasco",
+    "license": "ISC",
+    "dependencies": {
+        "yargs": "^15.3.1"
+    }
+}
