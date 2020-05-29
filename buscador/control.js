@@ -5,6 +5,11 @@ let pais = ["ABW", "AFG", "AGO", "ALB", "AND", "ARB", "ARE", "ARG", "ARM", "ASM"
 
 const mostrar = (file, country, year) => {
     return new Promise((resolve, reject) => {
+        if (!fs.existsSync(file, err => { return err })) {
+            reject(`El archivo ${file} no existe`);
+            return;
+        }
+
         if (year < 1960 || year > 2019) {
             reject(`El año ${year} no esta en el rango`);
             return;
@@ -19,6 +24,10 @@ const mostrar = (file, country, year) => {
 
 const guardar = (file, country, year) => {
     return new Promise((resolve, reject) => {
+        if (!fs.existsSync(file, err => { return err })) {
+            reject(`El archivo ${file} no existe`);
+            return;
+        }
         if (year < 1960 || year > 2019) {
             reject(`El año ${year} no esta en el rango`);
             return;
