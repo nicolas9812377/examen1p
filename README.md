@@ -37,3 +37,6 @@ npm i
 node app.js mostrar -f datos.csv --anio 2004
 
 node app.js guardar -f datos.csv -y 2004 --pais USA
+## Autor ✒️
+
+- _Nicolas Carrasco_
